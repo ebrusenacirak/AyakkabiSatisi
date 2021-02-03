@@ -43,5 +43,7 @@ namespace AyakkabiSatisi
         {
             this.Close();
         }
+
+
     }
 }

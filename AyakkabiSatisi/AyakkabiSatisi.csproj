@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FBCA617A-0C65-4276-BD97-F381BBC41880}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AyakkabiSatisi</RootNamespace>
+    <AssemblyName>AyakkabiSatisi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKategoriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKategoriEkle.Designer.cs">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriAra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriAra.Designer.cs">
+      <DependentUpon>frmMusteriAra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmusteriekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmusteriekle.Designer.cs">
+      <DependentUpon>frmmusteriekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmusterilistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmusterilistele.Designer.cs">
+      <DependentUpon>frmmusterilistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmsatislar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsatislar.Designer.cs">
+      <DependentUpon>frmsatislar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmurunekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmurunekle.Designer.cs">
+      <DependentUpon>frmurunekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUrunListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUrunListele.Designer.cs">
+      <DependentUpon>frmUrunListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKategoriEkle.resx">
+      <DependentUpon>frmKategoriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriAra.resx">
+      <DependentUpon>frmMusteriAra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmusteriekle.resx">
+      <DependentUpon>frmmusteriekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmusterilistele.resx">
+      <DependentUpon>frmmusterilistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsatislar.resx">
+      <DependentUpon>frmsatislar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmurunekle.resx">
+      <DependentUpon>frmurunekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUrunListele.resx">
+      <DependentUpon>frmUrunListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AyakkabiSatis.BLL\AyakkabiSatis.BLL.csproj">
+      <Project>{f6303904-0def-4136-b261-ca46439e27ae}</Project>
+      <Name>AyakkabiSatis.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AyakkabiSatis.DAL\AyakkabiSatis.DAL.csproj">
+      <Project>{6845a00d-9147-4078-a21c-1eeb11559856}</Project>
+      <Name>AyakkabiSatis.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AyakkabiSatis.MODEL\AyakkabiSatis.MODEL.csproj">
+      <Project>{bf65cf94-c699-4e0f-abff-80a1a2cf6c3e}</Project>
+      <Name>AyakkabiSatis.MODEL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
